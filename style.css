@@ -1,0 +1,511 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container_lg {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://source.unsplash.com/1600x900/?sky,morning") center center;
+}
+
+.con.container_lg {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("https://source.unsplash.com/1600x900/?sky,night") center center;
+}
+
+.weather {
+  height: 650px;
+  width: 400px;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #fbab7e;
+  background-image: linear-gradient(60deg, #fbab7e 0%, #f7ce68 100%);
+  -webkit-box-shadow: 0px 5px 5px 0px #555555;
+          box-shadow: 0px 5px 5px 0px #555555;
+}
+
+#weath {
+  background-color: #384e73;
+  background-image: none;
+}
+
+.background {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 30px 0px #707070;
+          box-shadow: 0px 0px 30px 0px #707070;
+  width: 90%;
+  height: 65%;
+  text-align: center;
+  position: relative;
+  background-color: #8fbfd3;
+  left: 20px;
+  margin-top: 20px;
+}
+
+.background h4,
+.background p {
+  color: white;
+}
+
+.background h4 {
+  font-weight: 800;
+}
+
+#back {
+  margin-top: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c9b3a3), to(#8a8583));
+  background-image: linear-gradient(to bottom, #c9b3a3, #8a8583);
+  -webkit-box-shadow: 0px 30px 30px 0px #5e5d5d;
+          box-shadow: 0px 30px 30px 0px #5e5d5d;
+  top: 20px;
+}
+
+#back h4 {
+  color: black;
+}
+
+.morning {
+  display: block;
+  font-size: 6rem;
+  color: #fcd440;
+}
+
+#morn {
+  display: none;
+}
+
+.night {
+  display: none;
+  font-size: 6rem;
+  color: #fefcd7;
+}
+
+#ni {
+  display: block;
+}
+
+#stardisplay {
+  display: initial;
+}
+
+.star.star1 {
+  display: none;
+  color: #d6cdcd;
+  font-size: 10px;
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+
+.star.star2 {
+  display: none;
+  position: relative;
+  font-size: 10px;
+  color: #d6cdcd;
+  top: 5px;
+  left: -200px;
+}
+
+.star.star3 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 400px;
+  left: -250px;
+}
+
+.star.star4 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 15px;
+  left: 70px;
+}
+
+.star.star4 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 500px;
+  left: -205px;
+}
+
+.star.star5 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 500px;
+  left: 50px;
+}
+
+.star.star6 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 500px;
+}
+
+.star.star7 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 570px;
+  left: -70px;
+}
+
+.star.star8 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 300px;
+  left: 80px;
+}
+
+.star.star9 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 20px;
+  left: -200px;
+}
+
+.star.star10 {
+  display: none;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 10px;
+  top: 5px;
+}
+
+#cloudisplay {
+  display: none;
+}
+
+.cloud.cloud1 {
+  display: initial;
+  color: #d6cdcd;
+  font-size: 30px;
+  position: relative;
+  top: 200px;
+  left: 2px;
+  -webkit-animation: anim1 20s infinite;
+          animation: anim1 20s infinite;
+}
+
+.cloud.cloud2 {
+  display: initial;
+  position: relative;
+  font-size: 30px;
+  color: #d6cdcd;
+  top: 35px;
+  left: 200px;
+  -webkit-animation: anim2 20s infinite;
+          animation: anim2 20s infinite;
+}
+
+.cloud.cloud3 {
+  display: initial;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 30px;
+  top: 550px;
+  left: 200px;
+  -webkit-animation: anim3 20s infinite;
+          animation: anim3 20s infinite;
+}
+
+.cloud.cloud4 {
+  display: initial;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 30px;
+  top: 15px;
+  -webkit-animation: anim4 20s infinite;
+          animation: anim4 20s infinite;
+}
+
+.cloud.cloud5 {
+  display: initial;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 30px;
+  top: 430px;
+  left: 50px;
+  -webkit-animation: anim5 20s infinite;
+          animation: anim5 20s infinite;
+}
+
+.cloud.cloud6 {
+  display: initial;
+  color: #d6cdcd;
+  position: relative;
+  font-size: 30px;
+  right: 120px;
+  top: 450px;
+  -webkit-animation: anim6 20s infinite;
+          animation: anim6 20s infinite;
+}
+
+@-webkit-keyframes anim1 {
+  0% {
+    left: -220px;
+  }
+  50% {
+    left: 145px;
+  }
+  100% {
+    left: -220px;
+  }
+}
+
+@keyframes anim1 {
+  0% {
+    left: -220px;
+  }
+  50% {
+    left: 145px;
+  }
+  100% {
+    left: -220px;
+  }
+}
+
+@-webkit-keyframes anim2 {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes anim3 {
+  0% {
+    left: 78px;
+  }
+  50% {
+    left: -67px;
+  }
+  100% {
+    left: 78px;
+  }
+}
+
+@keyframes anim3 {
+  0% {
+    left: 78px;
+  }
+  50% {
+    left: -67px;
+  }
+  100% {
+    left: 78px;
+  }
+}
+
+@-webkit-keyframes anim4 {
+  0% {
+    left: -275px;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: -275px;
+  }
+}
+
+@keyframes anim4 {
+  0% {
+    left: -275px;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: -275px;
+  }
+}
+
+@-webkit-keyframes anim5 {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: -356px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+
+@keyframes anim5 {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: -356px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+
+@-webkit-keyframes anim6 {
+  0% {
+    left: 100px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
+@keyframes anim6 {
+  0% {
+    left: 100px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
+.star {
+  -webkit-animation: staranim 10s infinite;
+          animation: staranim 10s infinite;
+}
+
+@-webkit-keyframes staranim {
+  0% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
+
+@keyframes staranim {
+  0% {
+    color: black;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.weather_icons {
+  margin-top: 10px;
+}
+
+#inp {
+  border-bottom: 2px solid #8fbfd3;
+  border-radius: 6px;
+  position: relative;
+  left: 100px;
+  background-color: transparent;
+  top: 10px;
+  outline: none;
+  padding: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#inp:hover {
+  -webkit-box-shadow: 0px 5px 5px 0px #535252;
+          box-shadow: 0px 5px 5px 0px #535252;
+  background-color: #c9b3a3;
+}
+
+.inpbtn {
+  position: relative;
+  left: 110px;
+  top: 15px;
+  background-color: transparent;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.inpbtn:hover {
+  color: white;
+}
+
+.cent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.tom {
+  color: white;
+  font-family: 'Odibee Sans', cursive;
+}
+/*# sourceMappingURL=style.css.map */

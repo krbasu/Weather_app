@@ -1,0 +1,359 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+.container_lg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://source.unsplash.com/1600x900/?sky,morning') center
+    center;
+}
+
+.con.container_lg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://source.unsplash.com/1600x900/?sky,night') center
+    center;
+}
+
+.weather {
+  height: 650px;
+  width: 400px;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #fbab7e;
+  background-image: linear-gradient(60deg, #fbab7e 0%, #f7ce68 100%);
+  box-shadow: 0px 5px 5px 0px rgb(85, 85, 85);
+}
+#weath {
+  background-color: #384e73;
+  background-image: none;
+}
+.background {
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgb(112, 112, 112);
+  width: 90%;
+  height: 65%;
+  text-align: center;
+  position: relative;
+  background-color: #8fbfd3;
+  left: 20px;
+  margin-top: 20px;
+  h4,
+  p {
+    color: white;
+  }
+  h4 {
+    font-weight: 800;
+  }
+}
+#back {
+  margin-top: 20px;
+  background-image: linear-gradient(to bottom, #c9b3a3, #8a8583);
+  box-shadow: 0px 30px 30px 0px rgb(94, 93, 93);
+  top: 20px;
+  h4 {
+    color: black;
+  }
+}
+.morning {
+  display: block;
+  font-size: 6rem;
+  color: #fcd440;
+}
+#morn {
+  display: none;
+}
+.night {
+  display: none;
+  font-size: 6rem;
+  color: #fefcd7;
+}
+#ni {
+  display: block;
+}
+#stardisplay {
+  display: initial;
+}
+
+.star.star1 {
+  display: none;
+  color: rgb(214, 205, 205);
+  font-size: 10px;
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+.star.star2 {
+  display: none;
+  position: relative;
+  font-size: 10px;
+  color: rgb(214, 205, 205);
+  top: 5px;
+  left: -200px;
+}
+.star.star3 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 400px;
+  left: -250px;
+}
+
+.star.star4 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 15px;
+  left: 70px;
+}
+
+.star.star4 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 500px;
+  left: -205px;
+}
+
+.star.star5 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 500px;
+  left: 50px;
+}
+
+.star.star6 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 500px;
+}
+.star.star7 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 570px;
+  left: -70px;
+}
+.star.star8 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 300px;
+  left: 80px;
+}
+.star.star9 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 20px;
+  left: -200px;
+}
+.star.star10 {
+  display: none;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 10px;
+  top: 5px;
+}
+#cloudisplay {
+  display: none;
+}
+.cloud.cloud1 {
+  display: initial;
+  color: rgb(214, 205, 205);
+  font-size: 30px;
+  position: relative;
+  top: 200px;
+  left: 2px;
+  animation: anim1 20s infinite;
+}
+.cloud.cloud2 {
+  display: initial;
+  position: relative;
+  font-size: 30px;
+  color: rgb(214, 205, 205);
+  top: 35px;
+  left: 200px;
+  animation: anim2 20s infinite;
+}
+.cloud.cloud3 {
+  display: initial;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 30px;
+  top: 550px;
+  left: 200px;
+  animation: anim3 20s infinite;
+}
+.cloud.cloud4 {
+  display: initial;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 30px;
+  top: 15px;
+  animation: anim4 20s infinite;
+}
+.cloud.cloud5 {
+  display: initial;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 30px;
+  top: 430px;
+  left: 50px;
+  animation: anim5 20s infinite;
+}
+.cloud.cloud6 {
+  display: initial;
+  color: rgb(214, 205, 205);
+  position: relative;
+  font-size: 30px;
+  right: 120px;
+  top: 450px;
+  animation: anim6 20s infinite;
+}
+
+@keyframes anim1 {
+  0% {
+    left: -220px;
+  }
+  50% {
+    left: 145px;
+  }
+  100% {
+    left: -220px;
+  }
+}
+@keyframes anim2 {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes anim3 {
+  0% {
+    left: 78px;
+  }
+  50% {
+    left: -67px;
+  }
+  100% {
+    left: 78px;
+  }
+}
+@keyframes anim4 {
+  0% {
+    left: -275px;
+  }
+  50% {
+    left: -100px;
+  }
+  100% {
+    left: -275px;
+  }
+}
+
+@keyframes anim5 {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: -356px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+@keyframes anim6 {
+  0% {
+    left: 100px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 100px;
+  }
+}
+
+.star {
+  animation: staranim 10s infinite;
+}
+
+@keyframes staranim {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.weather_icons {
+  margin-top: 10px;
+}
+#inp {
+  border-bottom: 2px solid #8fbfd3;
+  border-radius: 6px;
+  position: relative;
+  left: 100px;
+  background-color: transparent;
+  top: 10px;
+  outline: none;
+  padding: 2px;
+  transition: all 0.3s;
+}
+#inp:hover {
+  box-shadow: 0px 5px 5px 0px rgb(83, 82, 82);
+  background-color: #c9b3a3;
+}
+.inpbtn {
+  position: relative;
+  left: 110px;
+  top: 15px;
+  background-color: transparent;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  transition: color 1s;
+}
+.inpbtn:hover {
+  color: white;
+}
+.cent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tom {
+  color: white;
+  font-family: 'Odibee Sans', cursive;
+}
